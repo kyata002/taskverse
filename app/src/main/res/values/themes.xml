@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.Todolist" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!-- Base application theme without ActionBar -->
+    <style name="Theme.TaskVerse" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -9,8 +9,9 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/purple_700</item>
+        <!-- Make status bar icons dark or light -->
+        <item name="android:windowLightStatusBar">false</item> <!-- false = icons trắng, true = icons đen -->
     </style>
 </resources>
